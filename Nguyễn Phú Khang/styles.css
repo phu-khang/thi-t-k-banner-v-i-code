@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffebcd;
+    /* Màu nền sáng nhẹ */
+    color: #333;
+}
+
+header {
+    width: 100%;
+    background-color: #ff6600;
+    /* Màu cam đậm */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    opacity: 0.8;
+    animation: fadeIn 3s ease-in-out infinite alternate;
+    max-width: max-content;
+    max-height: max-content;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+main {
+    padding: 40px 10%;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #ff6600;
+    /* Màu cam cho tiêu đề */
+    margin-bottom: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #ff6600;
+    /* Màu cam đậm cho footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    .service-item {
+        padding: 15px;
+    }
+}
